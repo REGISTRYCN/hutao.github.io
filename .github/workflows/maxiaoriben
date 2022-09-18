@@ -1,0 +1,108 @@
+<h1>骂小日本弟国の网站</h1>
+<p>hello!!!</p>
+ <size=54188><color=red>f**k you The stinky little Japanese brother country（英文示范）</color></size>
+ <h1>ここでは、小さな日本の弟の国を怒らせることができます</h1>
+ <h1>Here, you can feel free to scold the little Japanese brother country</h1>
+ <h1>在这里，你可以尽情的骂小日本弟国</h1>
+ <h1>Здесь вы можете смело ругать маленького японского брата страну!!!</h1>
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset = "utf-8" />
+
+        <style>
+            /*css样式表位置*/
+        </style>
+
+    </head>
+
+    <body>
+        <!--网页内容区-->
+        
+
+    </body>
+    
+    <script>
+        //JavaScript位置
+       
+    </script>
+</html>
+<!DOCTYPE html>
+    <head>
+        <meta charset = "utf-8" />
+
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(162, 198, 189);
+                color: white;
+            }
+            #main{
+                flex: 1;
+                width: 60%;
+            }
+            #typing{
+                flex: 1;
+                width: 60%;
+                height: 20vh;
+                border: red;
+                font-size:xx-large;
+            }
+            #commend{
+                flex: 1;
+                width: 80%;
+            }
+            #btn{
+                background-color: red;
+            }
+            p{
+                background-color:black;
+            }
+        </style>
+
+    </head>
+
+
+    </script>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>评论区留言</title>
+    <style type="text/css">
+        .div1,div{
+            width: 1350px;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div1">
+        <!-- 创建昵称和留言文本框 -->
+        <span>昵称：</span><input type="text" id="user" name="user">
+        <br>
+        <span>留言：</span><textarea id="lang"></textarea><br>
+        <!-- 创建提交评价按钮 -->
+        <input type="button" value="提交评价" id="btn">
+    </div>
+</body>
+<script type="text/javascript">
+    //通过id属性查找标签节点
+    var user=document.getElementById('user');
+    var lang=document.getElementById('lang');
+    //通过id属性查找提交评价按钮并绑定点击事件
+    document.getElementById('btn').onclick=function(){
+        //在html代码中创建一个div盒子
+        var cont=document.createElement('div');
+        //将获取到的数据，放到一创建好的盒子中
+        cont.innerHTML='<p>'+user.value+':'+lang.value+'</p><hr>';
+        //将创建好的div盒子及及内容显示在页面中
+        document.getElementById('div1').appendChild(cont);
+        user.value='';
+        lang.value='';
+    }
+</script>
+</html>
